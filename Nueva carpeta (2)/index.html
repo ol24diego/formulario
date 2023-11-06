@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitud de Ingreso al Ejército</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      width: 80%;
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="radio"], input[type="checkbox"], select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Solicitud de Ingreso al Ejército</h2>
+  <form action="#" method="post">
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" required>
+
+    <label for="genero">Género:</label>
+    <input type="radio" id="genero_m" name="genero" value="masculino" required>
+    <label for="genero_m">Masculino</label>
+    <input type="radio" id="genero_f" name="genero" value="femenino" required>
+    <label for="genero_f">Femenino</label>
+
+    <label for="direccion">Dirección:</label>
+    <input type="text" id="direccion" name="direccion" required>
+
+    <label for="ciudad">Ciudad:</label>
+    <input type="text" id="ciudad" name="ciudad" required>
+
+    <label for="estado">Estado/Provincia:</label>
+    <input type="text" id="estado" name="estado" required>
+
+    <label for="codigo_postal">Código Postal:</label>
+    <input type="text" id="codigo_postal" name="codigo_postal" required>
+
+    <label for="pais">País:</label>
+    <input type="text" id="pais" name="pais" required>
+
+    <label for="educacion">Nivel de educación:</label>
+    <select id="educacion" name="educacion">
+      <option value="secundaria">Secundaria</option>
+      <option value="preparatoria">Preparatoria</option>
+      <option value="licenciatura">Licenciatura</option>
+      <option value="posgrado">Posgrado</option>
+      <!-- Agrega más opciones si es necesario -->
+    </select>
+
+    <label for="motivo_solicitud">Motivo para unirse al ejército:</label>
+    <textarea id="motivo_solicitud" name="motivo_solicitud" rows="4" required></textarea>
+
+    <label for="aceptar_terminos">Acepto los términos y condiciones:</label>
+    <input type="checkbox" id="aceptar_terminos" name="aceptar_terminos" required>
+
+    <input type="submit" value="Enviar">
+  </form>
+</div>
+
+</body>
+</html>
